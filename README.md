@@ -1,5 +1,5 @@
 # Raspberry-Pi-Robot
-For our final project we decided to make a robot that will give the user a high five. We used parts like motors, sensors, speakers, and we used the many legos to build structures that will hold our build.
+For our final project we decided to make a robot that will give the user a high five. We used parts like motors, sensors, speakers, and we used the many legos to build structures that will hold our build. We used legos and parts from different boxes to complete our structure. We made a new "arm" for our camera becasue our last design would get hit by our hand, so we made it moveable and it is able to extend and has a longer range now.
 
 Our first steps included brainstorming ideas for our robot and we landed on a robot that can scan colors and do different actions.
 
