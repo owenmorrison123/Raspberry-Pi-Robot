@@ -6,22 +6,60 @@ Our first steps included brainstorming ideas for our robot and we landed on a ro
 
 # Raspberry Pi
 <h2>Ports</h2>
-Power Port (USB-C) Purpose: Powers the Raspberry Pi.
-USB Ports
 
-Ethernet Port (RJ45) Purpose: Wired internet/network connection.
+<h3>Power Input (USB-C Port)</h3>
 
-HDMI Ports (2× Micro HDMI) Purpose: Video output to monitors/TVs.
+Purpose: Supplies regulated power (typically 5V/3A) to the Raspberry Pi board.
 
-Audio/Video Jack (3.5mm) Purpose: Analog audio output and composite video output.
+Details: Utilizes USB Power Delivery (USB-PD) for voltage negotiation. Powers the system’s components including USB hubs, HDMI, and GPIO.
 
-GPIO Header (40-Pin) Purpose: Allows connection of sensors, buttons, LEDs, and other electronic components.
+<h3>USB Ports (2× USB 3.0, 2× USB 2.0)</h3>
 
-Camera Port (CSI) Purpose: Connects a Raspberry Pi Camera Module.
+Purpose: Enables data transfer and connectivity for peripherals like keyboards, mice, and storage devices.
 
-Display Port (DSI) Purpose: Connects the Raspberry Pi official touchscreen display.
+Details: USB 3.0 ports provide up to 5Gbps, ideal for high-speed devices. USB 2.0 ports offer 480Mbps. All ports are backward compatible.
 
-MicroSD Card Slot (Underside) Purpose: Stores the operating system and files.
+<h3>Ethernet Port (RJ45)</h3>
+
+Purpose: Offers wired internet/network connectivity.
+
+Details: Supports 10/100/1000 Mbps. On models like the Raspberry Pi 4, connected via a dedicated PCIe lane for improved network throughput.
+
+<h3>HDMI Outputs (2× Micro HDMI Ports)</h3>
+
+Purpose: Sends digital video and audio to displays such as monitors and TVs.
+
+Details: Supports up to dual 4K displays (4K@30Hz) or a single 4K@60Hz display. Compliant with HDMI 2.0, including CEC and audio pass-through.
+
+<h3>Audio/Video Jack (3.5mm TRRS)</h3>
+
+Purpose: Provides analog stereo audio and composite video output.
+
+Details: Requires configuration via config.txt for video output. Includes built-in DAC and low-pass filter for improved analog audio quality.
+
+<h3>GPIO Header (40-Pin)</h3>
+
+Purpose: Allows interfacing with external components like sensors, LEDs, and motors.
+
+Details: Includes 26 programmable GPIOs and dedicated lines for UART, I²C, SPI, and PWM. Controlled via Python, C/C++, or shell scripting.
+
+<h3>Camera Port (CSI - Camera Serial Interface)</h3>
+
+Purpose: Connects official and compatible camera modules.
+
+Details: 15-pin MIPI CSI-2 connector for high-speed, low-latency data transfer directly to the GPU, supporting cameras up to 12MP.
+
+<h3>Display Port (DSI - Display Serial Interface)</h3>
+
+Purpose: Connects the Raspberry Pi official touchscreen display.
+
+Details: 15-pin MIPI DSI connector transmits high-speed display data. Allows integration of power and touch input through a single cable.
+
+<h3>MicroSD Card Slot (Located on Underside)</h3>
+
+Purpose: Stores the Raspberry Pi’s operating system and files.
+
+Details: Supports UHS-I MicroSD cards. Primary boot source unless configured otherwise. Performance depends heavily on card speed and quality.
 
 
 # Robot
